@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fieldset{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .cnic-box {
+            width: 30px;
+            text-align: center;
+            margin: 0 2px;
+            padding: 5px;
+            border: 1px solid #535252;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .cnic-input {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+    </style>
+    <title>Personal Details</title>
+</head>
+<body>
+    <table cellpadding="8" class="center">
+        <tr>
+             <td style="background-color: lightgreen;"><h3>Step 1: Accounts</h3></td>
+             <td style="background-color:rgb(148, 179, 248)"><h3>Step 2: Personal Details</h3></td>
+             <td><h3>Step 3: Your Review</h3></td>
+         </tr>
+         <tr>
+             <td></td>
+         </tr>
+     </table>
+    <fieldset class="fieldset">
+        <legend><b>Personal Details</b></legend>
+        <br />
+        <label for="First name"><b>First Name:</b></label>
+        <br />
+        <input type="text" placeholder="Enter your First name" size="75" name="First name" required>
+        <br />
+        <br />
+        <label for="Last Name"><b>Last Name:</b></label>
+        <br />
+        <input type="text" name="Last Name" size="75" placeholder="Enter your Last Name" required>
+        <br />
+        <br />
+         <div class="form-group">
+            <label for="CNIC" style="display: block; margin-bottom: 5px; font-weight: bold;">CNIC:</label>
+            <div class="cnic-input">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <span style="margin: 0 5px;">-</span>
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+                <span style="margin: 0 5px;">-</span>
+                <input type="text" class="cnic-box" maxlength="1" size="1">
+            </div>
+        </div>
+    <label for="Social link"><b>Social link:</b></label>
+    <br />
+    <input type="text" size="75" name="social Link" placeholder="Enter Facebook/Linkedin profile link" >
+    <br />
+    <br />
+    <a href="./Registration Form page 2.html"><img width="25%" src="../Assets/Form/back button.webp" alt="yahan pr back button ha"></a>
+        <a href="./Registration Form page 4.html"><img width="25%" src="../Assets/Form/next button.webp" alt="yahan pr next button ha"></a>
+
+    </fieldset>
+</body>
+</html>

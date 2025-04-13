@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fieldset{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <title>Your Review</title>
+</head>
+<body>
+    <table cellpadding="8" class="center">
+        <tr>
+             <td style="background-color: lightgreen;"><h3>Step 1: Accounts</h3></td>
+             <td style="background-color: lightgreen;"><h3>Step 2: Personal Details</h3></td>
+             <td style="background-color:rgb(148, 179, 248)"><h3>Step 3: Your Review</h3></td>
+         </tr>
+         <tr>
+             <td></td>
+         </tr>
+     </table>
+     <fieldset class="fieldset">
+        <legend><b>Your Review</b></legend>
+        how did you hear about us? 
+        <select name="Source">
+            <option value="options" selected>Select your option</option>
+            <option value="Social Media">Social Media</option>
+            <option value="News Media">News Media</option>
+            <option value="Volunteers">Volunteers</option>
+            <option value="other">Other</option>
+        </select>
+        <br />
+        <p>Would you visit again?</p>
+        <input type="radio" value="Yes" name="confirmation">Yes
+        <input type="radio" value="No" name="confirmation">No
+        <input type="radio" value="Maybe" name="confirmation">Maybe
+        <br />
+        <p>Comments:</p>
+        <textarea name="comments" cols="40" rows="4" placeholder="Enter your comments here..."></textarea>
+        <br>
+        <p>Documents:</p>
+        <input type="file" name="file">
+        <br />
+        <br />
+        <input type="checkbox" checked>Sign me up for email updates
+        <br />
+        <br />
+        <a href="./Registration Form page 3.html"><img width="25%" src="../Assets/Form/back button.webp" alt="yahan pr back button ha"></a>
+        <a href=""><img width="25%" src="../Assets/Form/submit button.webp" alt="yahan pr submit button ha"></a>
+     </fieldset>
+
+</body>
+</html>
