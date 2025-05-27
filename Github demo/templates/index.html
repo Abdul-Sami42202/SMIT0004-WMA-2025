@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="filters">
+            <h5>Filters</h5>
+            <form method="GET" action="/">
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <select name="gender" class="form-select" onchange="this.form.submit()">
+                        <option value="all" {% if selected_gender == 'all' %}selected{% endif %}>All</option>
+                        <option value="Men" {% if selected_gender == 'Men' %}selected{% endif %}>Men</option>
+                        <option value="Women" {% if selected_gender == 'Women' %}selected{% endif %}>Women</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <select name="category" class="form-select" onchange="this.form.submit()">
+                        <option value="all" {% if selected_category == 'all' %}selected{% endif %}>All</option>
+                        {% for category in categories %}
+                        <option value="{{ category }}" {% if selected_category == category %}selected{% endif %}>{{ category }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="price">${{ "%.2f"|format(product.price) }}</p>
+                        <a href="{{ url_for('add_to_cart', product_id=product.id) }}" class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
