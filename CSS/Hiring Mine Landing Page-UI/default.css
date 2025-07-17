@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+    height: 84px;
+}
+.list img{
+    width: 200px;
+}
+.list:hover{
+    cursor: pointer;
+}
+.list{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  white-space: nowrap;
+}
+#heading{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  font-style: normal;
+  background: linear-gradient(106.43deg, #522fd4 0%, #6bdcff 95.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.para{
+    width: 75%;
+    margin: 5px auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: break-word; /*✅ This handles the wrapping */
+}
+.centre{
+    text-align: center;
+    font-size: 25px;
+}
+.search-box {
+    height: 48px;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.search-box:focus {
+    border-color: rgb(104, 81, 255);
+}
+.search-box:hover {
+    border-color: black;
+}
+#search{
+    display: flex;
+    justify-content: center;
+}
+
+.stylish-button {
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #6851FF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+
+  }
+  
+  .stylish-button:hover {
+    background-color: rgb(77, 61, 178);
+  }
+.btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #9747ff;
+    margin-top: 2%;
+}
