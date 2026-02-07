@@ -5,6 +5,7 @@ const fetchRecipeData = async (recipeId) => {
     const response = await fetch(`${API}/recipes/${recipeId}`);
     const singleRecipeData = await response.json();
     const recipe = singleRecipeData?.data?.recipe;
+    console.log(recipe)
     if (!recipe) {
       console.error("Recipe not found or invalid response", singleRecipeData);
       return;
