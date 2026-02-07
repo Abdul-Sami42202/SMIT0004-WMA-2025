@@ -7,7 +7,6 @@ let instruction = document.getElementById("instruction");
 
 const renderResults = async () => {
   const recipes = await fetchResults();
-  console.log(recipes)
   if (recipes.length === 0) {
     emoji.className = "fa-solid fa-circle-exclamation";
     instruction.innerText = "No recipes found. Try another keyword.";

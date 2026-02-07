@@ -9,7 +9,6 @@ const fetchResults = async () => {
   try {
     const response = await fetch(`${API}/recipes?search=${searchInput.value}`);
     const recipiesdata = await response.json();
-    console.log(recipiesdata)
     recipeList.innerHTML = "";
     const recipes = recipiesdata?.data?.recipes;
     return recipes;

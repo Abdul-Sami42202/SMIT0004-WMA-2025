@@ -1,7 +1,7 @@
 /* ================= NAVBAR RESPONSIVE ================= */
 
 /* <= 900px: Logo + search in one row (100% width with space), nav-actions in column at end */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .navbar {
     flex-direction: column;
     align-items: flex-end;
@@ -22,11 +22,12 @@
 
   .search-box {
     flex: 1;
+    min-width: 0;
   }
 
   .search-box input {
     max-width: none;
-    min-width: none;
+    min-width: 0;
   }
 
   .nav-actions {
@@ -36,6 +37,57 @@
 
   .nav-actions button {
     margin-left: 0;
+  }
+}
+
+/* <= 405px: prevent search bar from staying fixed width, fix sidebar overflow */
+@media screen and (max-width: 405px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .navbar-top {
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .search-box {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .search-box input {
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .search-box button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .container {
+    min-width: 0;
+  }
+
+  .recipe-list {
+    max-height: 36vh;
+    min-height: 160px;
+    padding: 10px;
+  }
+
+  .recipe-detail-panel {
+    min-width: 0;
   }
 }
 
@@ -58,6 +110,11 @@
   .search-box {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
+  }
+
+  .search-box input {
+    min-width: 0;
   }
 
   .nav-actions {

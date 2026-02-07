@@ -62,12 +62,12 @@ body {
 
 .search-box input {
   flex: 1;
+  min-width: 0;
   padding: 12px 20px;
   border-radius: 50px 0 0 50px;
   border: none;
   outline: none;
   max-width: 50%;
-  min-width: 300px;
 }
 .search-box button {
   padding: 10px 20px;
