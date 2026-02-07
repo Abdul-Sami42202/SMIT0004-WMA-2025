@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forkify</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/assets/favicon-D1uBuaMw.png" type="image/x-icon" />
+    <script type="module" crossorigin src="/assets/main-Dcw2lycZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-geUdw-n0.css">
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <div class="navbar-top">
+        <div class="logo">
+          <img class="logo-img" src="/assets/logo-BpoHKSAM.png" alt="" />
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search over 1,000,000 recipes..." />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn">
+          <i style="color: #f29880" class="fa-regular fa-pen-to-square"></i> Add
+          Recipe
+        </button>
+        <button class="nav-btn">
+          <i style="color: #f29880" class="fa-regular fa-bookmark"></i>
+          Bookmarks
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="container">
+      <!-- ========== LEFT SIDEBAR ========== -->
+      <aside class="recipe-list">
+        <div class="recipe-list-placeholder">
+          <p id="search-items">
+            <i class="fa-solid fa-magnifying-glass"></i>No recipe found
+          </p>
+        </div>
+        <!-- Recipe Item -->
+      </aside>
+
+      <!-- ========== RIGHT CONTENT ========== -->
+      <section class="recipe-detail-panel">
+        <div class="recipe-detail empty-state">
+          <i
+            id="emoji"
+            style="color: #f29880"
+            class="fa-regular fa-face-smile"
+          ></i>
+          <p id="instruction">
+            Start by searching for a recipe or an ingredient. Have fun!
+          </p>
+        </div>
+        <div class="recipe-detail-content hidden"></div>
+      </section>
+    </main>
+  </body>
+</html>
